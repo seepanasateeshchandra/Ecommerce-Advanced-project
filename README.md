@@ -1,1 +1,164 @@
-# Ecommerce-Advanced-project
+# 🛒 Advanced eCommerce Backend (Spring Boot Monolithic)
+
+An **end-to-end monolithic eCommerce backend** project built with Java, Spring Boot, Spring Security (JWT), and JPA. This project simulates a real-world eCommerce application with features like user authentication, product management, cart, orders, payments, inventory management, dashboards, and role-based access.
+
+---
+
+## 🔧 Tech Stack
+
+* **Language**: Java 17+
+* **Framework**: Spring Boot 3.x
+* **Security**: Spring Security with JWT Authentication
+* **Database**: MySQL / PostgreSQL / H2 (configurable)
+* **ORM**: Spring Data JPA + Hibernate
+* **Validation**: Jakarta Validation (JSR 380)
+* **DTO Mapping**: MapStruct (or manual mapping)
+* **Documentation**: Swagger UI + OpenAPI
+* **Build Tool**: Maven
+* **Architecture**: Monolithic, Layered (Controller → Service → Repository)
+
+---
+
+## 🔐 Authentication Module
+
+* JWT-based authentication (Register/Login)
+* Role-based access (`ADMIN`, `USER`)
+* Password encryption using BCrypt
+* Endpoints:
+
+  * `POST /api/auth/register`
+  * `POST /api/auth/login`
+
+---
+
+## 👤 User Module
+
+* Register new users
+* Secure login with JWT
+* View personal info and profile
+* Role-based access control
+
+---
+
+## 🛍️ Product Module
+
+* Admin can create/update/delete products
+* Users can browse all products
+* Includes product DTOs and validation
+* Endpoints:
+
+  * `GET /api/products`
+  * `POST /api/products` (ADMIN only)
+  * `PUT /api/products/{id}` (ADMIN only)
+  * `DELETE /api/products/{id}` (ADMIN only)
+
+---
+
+## 🛒 Cart Module
+
+* Users can:
+
+  * Add products to cart
+  * View cart
+  * Remove items from cart
+* Each user has a single active cart
+* Cart sync with product availability
+
+---
+
+## 📦 Order Module
+
+* Convert cart to order
+* Save ordered items and quantities
+* Update inventory automatically
+* View order history
+* Order DTOs and mapping
+
+---
+
+## 💳 Payment Module
+
+* Simulates payment after placing order
+* Stores payment info linked with order
+* Basic success simulation
+* Timestamped payment tracking
+
+---
+
+## 🧮 Inventory Module
+
+* Track stock quantity of each product
+* Inventory sync:
+
+  * ⬇ Decrease quantity on order
+  * ⬆ Increase on cancel (if implemented)
+* Prevent order if stock not available
+
+---
+
+## 📊 Admin Dashboard
+
+* Total users
+* Total products
+* Total orders
+* Total revenue
+* Admin-only access
+* Endpoint: `GET /api/admin/dashboard`
+
+---
+
+## 📋 User Dashboard
+
+* View profile info
+* Recent orders
+* Cart items
+* Last payment summary
+* Endpoint: `GET /api/user/dashboard`
+
+---
+
+## 🧾 Swagger API Docs
+
+* Accessible at `/swagger-ui/index.html`
+* Includes:
+
+  * JWT token authorization
+  * All REST endpoints with request/response models
+
+---
+
+## 🚀 How to Run
+
+1. Clone the repo
+   `git clone https://github.com/your-username/ecommerce-backend`
+
+2. Set up your database in `application.properties`
+
+3. Run the Spring Boot application
+   `mvn spring-boot:run`
+
+4. Access Swagger docs
+   `http://localhost:8080/swagger-ui/index.html`
+
+---
+
+## ✅ Features Summary
+
+| Feature        | Description                       |
+| -------------- | --------------------------------- |
+| 🧍 User Auth   | Register/Login, Role-based access |
+| 🛒 Cart        | Add/Remove items, view cart       |
+| 🛍️ Products   | Admin CRUD, user view             |
+| 📦 Orders      | Convert cart to order             |
+| 💳 Payment     | Simulate payment with timestamps  |
+| 🧮 Inventory   | Stock management, sync with order |
+| 📊 Dashboards  | Real-time user/admin stats        |
+| 🔐 JWT Secured | All endpoints protected           |
+| 📖 Swagger UI  | Full API docs & testing UI        |
+
+---
+
+## 📂 Folder Structure
+
+
+
