@@ -160,5 +160,34 @@ An **end-to-end monolithic eCommerce backend** project built with Java, Spring B
 
 ## 📂 Folder Structure
 
+src/
+├── main/
+│   ├── java/com/example/
+│   │   └── ecommerce/
+│   │       ├── config/                # Security & Swagger Configuration
+│   │       ├── controller/            # REST API Controllers
+│   │       ├── dto/                   # Data Transfer Objects
+│   │       ├── entity/                # JPA Entity Classes
+│   │       ├── exception/             # Custom Exceptions & Handlers
+│   │       ├── repository/            # JPA Repositories
+│   │       ├── security/              # JWT & Authentication Filters
+│   │       ├── service/               # Service Interfaces & Implementations
+│   │       └── EcommerceApplication.java  # Main class
+│   └── resources/
+│       ├── application.properties     # DB config, Swagger, etc.
+│       └── static/ & templates/       # (Optional for frontend)
+├── test/                              # Unit & Integration Tests
 
+
+
+**📌 Final Note**
+
+1. This monolithic eCommerce backend simulates a production-grade real-world system. It covers:
+2. Full JWT-based authentication & role management
+3. Clean DTO → Entity mapping
+4. Business logic separation
+5. Realistic eCommerce workflows (cart, order, payment)
+6. Admin/User dashboards
+7. Inventory stock sync
+8. Swagger-powered API exploration
 
