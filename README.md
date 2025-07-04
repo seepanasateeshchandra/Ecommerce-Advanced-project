@@ -197,6 +197,24 @@ src/
 ![Screenshot 2025-07-03 163513](https://github.com/user-attachments/assets/31fb09f1-3e5f-4f02-ad68-ce7b02f0540e)
 ![Screenshot 2025-07-03 163535](https://github.com/user-attachments/assets/3b62ba9f-ee0a-452f-98f4-3d071690be4a)
 
+**This Registration Page of User in PostMan :**
+![Screenshot 2025-07-03 183855](https://github.com/user-attachments/assets/3e9bf18d-f3c1-4890-8953-88aaf5224e91)
+
+**This is login Page Of Who are Register with emaild and password**
+![Screenshot 2025-07-04 095648](https://github.com/user-attachments/assets/b6b26a91-00ee-4a35-9980-d3e425c518c7)
+
+**This is User Module Photo in This see the Details about UserDetails with User only with JWT Token With Token it will Not allow**
+![Screenshot 2025-07-04 095648](https://github.com/user-attachments/assets/0d94a33c-a6f0-4af6-bfdb-2bc94064d12e)
+
+
+
+
+
+
+
+
+
+
 
 
 
